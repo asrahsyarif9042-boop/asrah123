@@ -1,0 +1,61 @@
+/* Gaya tambahan untuk website Jelajah Sulbar */
+:root {
+  --green-dark: #164e3b;
+  --green: #287a56;
+  --green-soft: #eaf4ee;
+  --cream: #f8f7f1;
+  --text: #24332b;
+}
+body {
+  color: var(--text);
+  background: #fff;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.site-navbar { background: var(--green-dark); }
+.site-navbar .nav-link { color: rgba(255,255,255,.82); }
+.site-navbar .nav-link:hover, .site-navbar .nav-link.active { color: #fff; }
+.hero {
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(13,48,37,.85), rgba(13,48,37,.28)),
+    url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=85") center/cover;
+}
+.hero-content { max-width: 650px; padding: 70px 0; }
+.hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.05; margin: 12px 0 20px; }
+.hero h1 span { color: #c9f0d8; }
+.hero p { max-width: 560px; font-size: 1.1rem; margin-bottom: 25px; }
+.eyebrow { color: #3e8c65; font-size: .8rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; margin-bottom: 8px; }
+.hero .eyebrow { color: #d6f3e0; }
+.section-space { padding-top: 64px; padding-bottom: 64px; }
+.section-heading { margin-bottom: 28px; }
+.section-heading h2 { font-weight: 750; }
+.section-heading > p:last-child { color: #68756e; }
+.destination-card { border: 1px solid #e4e9e5; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(22,78,59,.06); }
+.destination-card .card-img-top { height: 215px; object-fit: cover; }
+.destination-card .card-body { padding: 22px; }
+.destination-card .card-title { font-weight: 750; }
+.btn-success { background-color: var(--green); border-color: var(--green); }
+.btn-success:hover { background-color: var(--green-dark); border-color: var(--green-dark); }
+.btn-outline-success { color: var(--green); border-color: var(--green); }
+.btn-outline-success:hover { background-color: var(--green); border-color: var(--green); }
+.highlight-band { background: var(--green-soft); padding: 42px 0; }
+.page-banner { background: var(--cream); padding: 58px 0; }
+.page-banner h1 { font-weight: 800; font-size: clamp(2rem, 5vw, 3.2rem); }
+.page-banner p:last-child { color: #647168; margin-bottom: 0; }
+.detail-image { width: 100%; height: 340px; object-fit: cover; border-radius: 18px; }
+.detail-section { scroll-margin-top: 24px; }
+.about-panel { padding: 36px; border-radius: 20px; background: var(--green-soft); }
+.about-icon, .login-symbol { font-size: 2.7rem; }
+.site-footer { background: #123b2d; color: #dce9e1; padding: 22px 0; font-size: .9rem; }
+.login-background { background: var(--cream); padding: 64px 0; min-height: calc(100vh - 130px); }
+.login-card { max-width: 480px; margin: 0 auto; padding: 34px; border-radius: 20px; background: #fff; box-shadow: 0 12px 35px rgba(22,78,59,.1); }
+.form-control:focus { border-color: #62a982; box-shadow: 0 0 0 .2rem rgba(40,122,86,.15); }
+@media (max-width: 576px) {
+  .hero { min-height: 420px; }
+  .hero-content { padding: 52px 0; }
+  .section-space { padding-top: 44px; padding-bottom: 44px; }
+  .detail-image { height: 240px; }
+  .login-card { padding: 25px 20px; }
+}
